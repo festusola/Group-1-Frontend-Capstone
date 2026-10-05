@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A planet information project created for TSAcademy." />
+    <title>Planet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-container">
+        <div class="header-top">
+          <a class="logo" href="index.html" aria-label="Planet home">
+            <img src="assets/logo_black.png" alt="Planet" />
+          </a>
+          <!-- Visual only. Another team member can add theme functionality later. -->
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <span>DARK</span><span class="moon-icon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+        <form class="search-bar" action="#" role="search">
+          <label class="visually-hidden" for="planet-search">Search planet name</label>
+          <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 4.2 4.2" />
+          </svg>
+          <input class="search-input" id="planet-search" name="planet" type="search" placeholder="Search planet name" />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Other group members can add their page content inside main. -->
+    <main class="main-content" id="main-content"></main>
+
+    <footer class="site-footer">
+      <div class="page-container footer-content">
+        <section class="footer-about" aria-labelledby="about-title">
+          <h2 id="about-title">About</h2>
+          <p>Group member names</p>
+        </section>
+        <section class="footer-credit" aria-label="Project credits">
+          <p>©2026 Design by Amaka N</p>
+          <p>Built by GroupName. All rights reserved</p>
+          <p>TSAcademy</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
