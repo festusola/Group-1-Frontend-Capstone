@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --white: #FFFFFF;
+    --blue: #0079FF;
+    --blue2: #4B6A9B;
+    --lightblue: #F6F8FF
+}
+ body {
+    background-color: var(--lightblue);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+   
+ }
+.hero {
+    background-color: var(--white);
+    width:730px;
+    /* height: 324px; */
+    display: flex;
+    justify-content: center;    
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    padding: 42px;
+
+
+}
+
+.hero {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.earth-icon {
+        width: 145px;
+        height: 145px;
+        padding: 12px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+       
+
+}
+
+.earth-icon img{
+            width: 117px;
+            height: 117px;
+            border-radius: 50%; 
+            object-fit: cover;
+            display: block;
+            margin-top: -10px;
+
+}
+
+.planet-information {
+
+    >h1{
+        color:black;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 120%;
+        
+
+    } 
+    span {
+        color: var(--blue);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    
+
+    >p {
+        color: var(--blue2);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 16px;
+    }
+
+    .details {
+        background-color: var(--lightblue);
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+        margin-top: 24px;
+        border-radius: 10px;
+
+        >div {
+            
+            align-items: center;
+            padding: 15px 32px;
+
+            >p {
+                color: var(--blue2);
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+
+    }
+
+ 
+
+    .extra-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:12px 32px;
+        max-width: 480px;
+        margin-top: 24px;
+       
+       
+       .extra-info-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+
+           
+
+            >p {
+                color: var(--blue2);
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 150%;
+                
+            }
+            svg{
+               height: 20px;
+            }
+
+        }
+    }
+}
