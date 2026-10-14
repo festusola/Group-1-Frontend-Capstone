@@ -1,74 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hero section</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A planet information project created for TSAcademy."
+    />
+    <title>Planet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-
-    <div class="logo">🪐 <span class="planet">planet</span> </div>
-
-    <div class="toggle"> dark🌙</div>
-    
- <div class="search-box">
-   <input type="text"
-     max-length="100px"
-     placeholder="Search planet name">
-
-   
-   <button type="search">
-  search </button>
-         
- </div>
-   
-    <img src="https://share.google/Dkza2ShvquLg2wn6w"
-    https://share.google/NcCW9KPOiUB1bGZ20" width="50" alt="earth">
-
-    
-    <div class="planet-information">
-      <!--this class above is for the entire box area where earth info is in-->
-      
-      <h1 id="planet">Earth</h1>
-      <span class="planet-type">Terrestrial</span>
-      <p> The only known planet to support life, with liquid waater on it's surface.
-      </p>
-
-      <div class="details">
-        <div>
-        <span>Gravity </span>
-        <b>9.8</b>
+    <header class="site-header">
+      <div class="page-container">
+        <div class="header-top">
+          <a class="logo" href="index.html" aria-label="Planet home">
+            <img src="assets/logo_black.png" alt="Planet" />
+          </a>
+          <!-- Visual only. Another team member can add theme functionality later. -->
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark theme"
+          >
+            <span>DARK</span>
+            <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <form
+          class="search-bar"
+          id="planet-search-form"
+          action="#"
+          role="search"
+        >
+          <label class="visually-hidden" for="planet-search"
+            >Search planet name</label
+          >
+          <svg
+            class="search-icon"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 4.2 4.2" />
+          </svg>
+          <input
+            class="search-input"
+            id="planet-search"
+            name="planet"
+            type="search"
+            placeholder="Search planet name"
+          />
+          <span
+            class="search-status"
+            id="search-status"
+            aria-hidden="true"
+            hidden
+          >
+            <span class="search-status-dot"></span>
+            No results
+          </span>
+          <button class="search-button" type="submit">Search</button>
+        </form>
       </div>
+    </header>
 
-    <div>
-      <span>mass</span>
-      <b>0.00315</b>
-    </div>
+    <!-- Other group members can add their page content inside main. -->
+    <main class="main-content" id="main-content">
+      <section
+        class="search-result"
+        id="search-result"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <h1>No results found!</h1>
+        <p>
+          We couldn't find any planet matching your search. Please double-check
+          the name and try again.
+        </p>
+      </section>
+    </main>
 
-    <div>
-      <span>period</span>
-      <b>365</b>
-    </div>
-  </div>
-</div>
-
-  <div class="extra-info">
-    <div>🌡️
-    <span>288</span>
-    </div>
-
-    <div>🌙
-    <span>1</span></div>
-
-    <div>⚫️
-    <span>12756</span></div>
-  </div>
-
-    
-      <div>☀️
-    <span>149.6</span></div>
-    </body>
-
-               
-            
+    <footer class="site-footer">
+      <div class="page-container footer-content">
+        <section class="footer-about" aria-labelledby="about-title">
+          <h2 id="about-title">About</h2>
+          <p>Group member names</p>
+        </section>
+        <section class="footer-credit" aria-label="Project credits">
+          <p>©2026 Design by Amaka N</p>
+          <p>Built by GroupName. All rights reserved</p>
+          <p>TSAcademy</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
