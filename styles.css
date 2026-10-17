@@ -90,7 +90,9 @@ input {
 
 .search-bar:hover,
 .search-bar:focus-within {
-  box-shadow: 0 0 0 1px var(--blue), 0 14px 30px rgba(67, 87, 137, 0.12);
+  box-shadow:
+    0 0 0 1px var(--blue),
+    0 14px 30px rgba(67, 87, 137, 0.12);
 }
 
 .search-icon {
@@ -183,36 +185,81 @@ input {
   line-height: 1.5;
 }
 
-.site-footer {
-  padding: 32px 0 54px;
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 4rem;
+  padding: 2rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.footer-content {
+.Footer-about h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.Footer-about-links {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  color: #5473aa;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  width: 355.47px;
 }
 
-.footer-about h2,
-.footer-about p,
-.footer-credit p {
+.Footer-credits p {
+  font-weight: 500;
   margin: 0;
 }
 
-.footer-about h2 {
-  margin-bottom: 20px;
-  font-size: 1rem;
+.Footer h3,
+.Footer-credits {
+  margin-top: 0;
 }
 
-.footer-about p,
-.footer-credit {
-  font-size: 0.95rem;
-  line-height: 1.55;
+a {
+  text-decoration: none;
 }
 
-.footer-credit {
-  font-weight: 600;
+/* Tablet and mobile: footer stacks in one column */
+@media (max-width: 1024px) {
+  html {
+    padding: 60px 32px;
+  }
+
+  .Footer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .Footer-about-links {
+    width: 100%;
+  }
+
+  .Footer-credits p {
+    margin: 0;
+  }
+}
+
+/* Mobile only: tighter spacing */
+@media (max-width: 600px) {
+  html {
+    padding: 40px 16px;
+  }
+
+  .Footer {
+    gap: 1rem;
+  }
+
+  .Footer-about h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .Footer-about-links {
+    gap: 0.5rem 1rem;
+  }
 }
 
 .visually-hidden {
@@ -266,152 +313,132 @@ input {
 /* The hero section styles */
 
 :root {
-    --white: #FFFFFF;
-    --blue: #0079FF;
-    --blue2: #4B6A9B;
-    --lightblue: #F6F8FF
+  --white: #ffffff;
+  --blue: #0079ff;
+  --blue2: #4b6a9b;
+  --lightblue: #f6f8ff;
 }
- body {
-    background-color: var(--lightblue);
-    height: 100%;
-    margin: 0;
-    align-items: center;
-    font-family: 'Space Mono', monospace;
-     background-color: #f4f6ff;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-   
- }
- 
-  .container {
-    height: 100%;
-    max-width: 680px;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+body {
+  background-color: var(--lightblue);
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  background-color: #f4f6ff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
- 
-.hero {
-    background-color: var(--white);
-    width:730px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;   
-    border-radius: 15px;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-    padding: 42px;
-    
 
-
+.container {
+  height: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .hero {
-    align-items: flex-start;
-    gap: 15px;
+  background-color: var(--white);
+  width: 730px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  padding: 42px;
+}
+
+.hero {
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .earth-icon {
-        width: 145px;
-        height: 145px;
-        padding: 12px;
-        box-sizing: border-box;
-        flex-shrink: 0;
-       
-
+  width: 145px;
+  height: 145px;
+  padding: 12px;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
-.earth-icon img{
-            width: 117px;
-            height: 117px;
-            border-radius: 50%; 
-            object-fit: cover;
-            display: block;
-            margin-top: -10px;
-
+.earth-icon img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-top: -10px;
 }
 
 .planet-information {
+  > h1 {
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
 
-    >h1{
-        color:black;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 120%;
-        
+  > p {
+    color: var(--blue2);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 16px;
+  }
 
-    } 
-    span {
-        color: var(--blue);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
-    }
-    
+  .details {
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
 
-    >p {
+    > div {
+      align-items: center;
+      padding: 15px 32px;
+
+      > p {
         color: var(--blue2);
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 400;
         line-height: 150%;
-        margin-top: 16px;
+      }
     }
+  }
 
-    .details {
-        background-color: var(--lightblue);
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        width: 100%;
-        margin-top: 24px;
-        border-radius: 10px;
+  .extra-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 32px;
+    max-width: 480px;
+    margin-top: 24px;
 
-        >div {
-            
-            align-items: center;
-            padding: 15px 32px;
+    .extra-info-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
 
-            >p {
-                color: var(--blue2);
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 150%;
-            }
-        }
-
+      > p {
+        color: var(--blue2);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      svg {
+        height: 20px;
+      }
     }
-
- 
-
-    .extra-info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap:12px 32px;
-        max-width: 480px;
-        margin-top: 24px;
-       
-       
-       .extra-info-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-
-           
-
-            >p {
-                color: var(--blue2);
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 150%;
-                
-            }
-            svg{
-               height: 20px;
-            }
-
-        }
-    }
+  }
 }
