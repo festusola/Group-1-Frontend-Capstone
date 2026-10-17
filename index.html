@@ -1,22 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hero section</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A planet information project created for TSAcademy."
+    />
+    <title>Planet</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
+   <div class="container">
 
-   
-         
-  <section class="hero">
+    <header class="site-header">
+      <div class="page-container">
+        <div class="header-top">
+          <a class="logo" href="index.html" aria-label="Planet home">
+            <img src="assets/logo_black.png" alt="Planet" />
+          </a>
+          <!-- Visual only. Another team member can add theme functionality later. -->
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark theme"
+          >
+            <span>DARK</span>
+            <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <form
+          class="search-bar"
+          id="planet-search-form"
+          action="#"
+          role="search"
+        >
+          <label class="visually-hidden" for="planet-search"
+            >Search planet name</label
+          >
+          <svg
+            class="search-icon"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 4.2 4.2" />
+          </svg>
+          <input
+            class="search-input"
+            id="planet-search"
+            name="planet"
+            type="search"
+            placeholder="Search planet name"
+          />
+          <span
+            class="search-status"
+            id="search-status"
+            aria-hidden="true"
+            hidden
+          >
+            <span class="search-status-dot"></span>
+            No results
+          </span>
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Other group members can add their page content inside main. -->
+    <main class="main-content" id="main-content">
+      <section
+        class="search-result"
+        id="search-result"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <h1>No results found!</h1>
+        <p>
+          We couldn't find any planet matching your search. Please double-check
+          the name and try again.
+        </p>
+      </section>
+
+      <section class="hero">
     <div class="earth-icon">
-        <img src="images/earth.png"  width="50" alt="earth">
+        <img src="assets/earth.png"  width="50" alt="earth">
 
     </div>
 
@@ -91,6 +171,29 @@
 
   </section>
    
-    
-   
-    </body>
+    </main>
+
+
+     <footer class="Footer">
+ <footer class="Footer">
+      <div class="Footer-about">
+        <h3><a href="https://github.com/festusola/Group-1-Frontend-Capstone">Group 1</a></h3>
+        <div class="Footer-about-links">
+          <a href="">Festus</a>
+          <a href="">Otitonioluwa</a>
+          <a href="">Lydia</a>
+          <a href="">Beauty</a>
+          <a href="">Engr Adrian</a>
+          <a href="">Favour ben</a>
+          <a href="">Emmanuel</a>
+        </div>
+      </div>
+      <div class="Footer-credits">
+        <p>&copy; 2026 Design <a href="amakandukwu.com">Amaka N</a></p>
+        <p>Built by Group 1. All rights reserved</p>
+        <p><a href="https://tsacademyonline.com">TSAcademy</a></p>
+      </div>
+    </footer>
+    </div> 
+  </body>
+</html>
