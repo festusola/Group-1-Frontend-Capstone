@@ -10,13 +10,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: var(--page-background);
-  color: var(--text-color);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 button,
 input {
@@ -123,24 +116,27 @@ input {
 }
 
 .search-status {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #e35a5a;
-  font-size: 0.75rem;
-  white-space: nowrap;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+  font-family: 'Space Mono', monospace; ;
+}
+.search-status h2 {
+  margin: 0 0 16px;
+}
+.search-status p {
+ max-width: 600px;
+ margin: 0 auto;
+ color: #666;
 }
 
-.search-status[hidden],
-.search-result[hidden] {
-  display: none;
-}
 
 .search-status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
+ color: #e0455a;
+ font-weight: 700;
+ font-size: 0.9rem;
 }
 
 .search-button {
@@ -186,40 +182,51 @@ input {
 }
 
 .Footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 4rem;
-  padding: 2rem 1.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.footer-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.75rem;
-  width: 355.47px;
+ justify-content: space-between;
+gap: 2rem;
+align-items: flex-start;
+color: #4B6A9B;
 }
 
-.Footer-credits p {
+.Footer-about {
+
+ flex: 1.3 1 0 ;
+ min-width: 0;
+ 
+}
+.Footer-credits {
+  flex:1 1 0 ;
+  min-width: 0;
+  text-align: left;
+}
+
+.Footer p {
   font-weight: 500;
   margin: 0;
+  line-height: 150%;
+  font-size: 16px;
 }
 
-.footer-about h2 {
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
-.footer-about p,
-.footer-credit {
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
-.footer-credit {
+.Footer h2 {
+  margin-bottom: 0 0 1.25rem;
+  font-size: 20px;
   font-weight: 600;
+}
+
+
+.footer-credit p , a{
+  font-size: 16px;
+  font-weight: 600;
+  font-style: Bold;
+ 
+  
+}
+
+.Footer a {
+  color: inherit;
+  text-decoration: none;
+  
 }
 
 .visually-hidden {
@@ -310,6 +317,7 @@ body {
   border-radius: 15px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   padding: 42px;
+  font-family: 'Space Mono', monospace;
 }
 
 .hero {
@@ -401,4 +409,8 @@ body {
       }
     }
   }
+}
+
+[hidden] {
+  display: none !important;
 }
