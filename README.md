@@ -6,7 +6,7 @@ A responsive web app that lets you search for a planet by name and see its key f
 
 Built by **Group 1** of the **TSAcademy Hajimeh cohort** as a Frontend Capstone project.
 
-**🔗 Live site:** 
+**🔗 Live site:**  https://group-1-frontend-capstone-5jho.vercel.app/
 **📦 Repository:** https://github.com/festusola/Group-1-Frontend-Capstone
 
  Table of Contents
