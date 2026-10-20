@@ -510,6 +510,8 @@ vertical-align: middle;
 [data-theme="dark"] #planet { color: white; }
 [data-theme="dark"] .extra-info svg path {fill:#ffffff}
 [data-theme="dark"] .search-input {color:white;}
+[data-theme="dark"] .details {background-color :var(--bar);}
+
 
 
 
