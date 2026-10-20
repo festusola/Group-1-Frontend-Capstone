@@ -509,8 +509,8 @@ vertical-align: middle;
 [data-theme="dark"] #planet-description { color: #6f7bb0; }
 [data-theme="dark"] #planet { color: white; }
 [data-theme="dark"] .extra-info svg path {fill:#ffffff}
-[data-theme="dark"] .details {background-color:#141D2F;}
 [data-theme="dark"] .search-input {color:white;}
+
 
 
 
@@ -639,7 +639,8 @@ vertical-align: middle;
   .search-bar { gap: 10px; padding-left: 16px; }
   .search-input { min-width: 0; font-size: 0.75rem; }
   .search-button { padding: 13px 18px; font-size: 0.8rem; }
-  
+  .search-status {
+    color: white;
   }
   #hint { font-size: 0.7rem; }
 
