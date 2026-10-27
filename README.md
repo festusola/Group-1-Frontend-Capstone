@@ -171,8 +171,8 @@ Both light and dark modes work at every screen size.
 | **Favour Ben** | [@Fbenstudio](https://github.com/Fbenstudio) | Built the header and the search bar, worked on part of the footer, and implemented the error/loading message and search functionality. |
 | **Rebecca** | [@Rebecca-Samuel](https://github.com/Rebecca-Samuel) | Built the table section and its functionality. |
 | **Chibuzo** | [@chibuzo900-glitch](https://github.com/chibuzo900-glitch) | Built the table section and its functionality. |
-| **Ebuka** | n/a | Worked on part of the footer. |
-| **Lydia** | n/a | Wrote the HTML for the hero section. |
+| **Emmanuel** | [@Kleanton1](https://github.com/Kleanton1)  Worked on part of the footer. |
+| **Lydia** | [@leeddyah](https://github.com/leeddyah)| Wrote the HTML for the hero section. |
 | **Tunde** | [@Tunde99](https://github.com/Tunde99) | Contributed ideas for dark mode and responsiveness. |
 
 
