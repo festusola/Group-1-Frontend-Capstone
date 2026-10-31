@@ -166,14 +166,14 @@ Both light and dark modes work at every screen size.
 
 | Member | GitHub | Contribution |
 | --- | --- | --- |
-| **Festus** (Group Leader) | [@festusola](https://github.com/festusola) | Led the project and did the largest share of the work. Corrected and restructured the HTML, built the hero section, fixed the API fetch and the planet display function, worked on the light/dark toggle, handled responsiveness, and carried out integration and review. |
-| **Otitonioluwa** (Assistant Group Leader) | [@Otitonioluwa](https://github.com/Otitonioluwa) | Wrote the final CSS of the hero section and corrected the width of the whole page. Helped merge pull requests made by the group leader. |
-| **Favour Ben** | [@Fbenstudio](https://github.com/Fbenstudio) | Built the header and the search bar, worked on part of the footer, and implemented the error/loading message and search functionality. |
-| **Rebecca** | [@Rebecca-Samuel](https://github.com/Rebecca-Samuel) | Built the table section and its functionality. |
-| **Chibuzo** | [@chibuzo900-glitch](https://github.com/chibuzo900-glitch) | Built the table section and its functionality. |
+| **Oladipo Festus** (Group Leader) | [@festusola](https://github.com/festusola) | Led the project and did the largest share of the work. Corrected and restructured the HTML, built the hero section, fixed the API fetch and the planet display function, worked on the light/dark toggle, handled responsiveness, and carried out integration and review. |
+| **Olurayi Otitonioluwa** (Assistant Group Leader) | [@Otitonioluwa](https://github.com/Otitonioluwa) | Wrote the final CSS of the hero section and corrected the width of the whole page. Helped merge pull requests made by the group leader. |
+| **Ugochukwu Ben** | [@Fbenstudio](https://github.com/Fbenstudio) | Built the header and the search bar, worked on part of the footer, and implemented the error/loading message and search functionality. |
+| **Rebecca Samuel** | [@Rebecca-Samuel](https://github.com/Rebecca-Samuel) | Built the table section and its functionality. |
+| **Chibuzo Okafor** | [@chibuzo900-glitch](https://github.com/chibuzo900-glitch) | Contributed to the table section and its functionality. |
 | **Emmanuel** | [@Kleanton1](https://github.com/Kleanton1)  Worked on part of the footer. |
 | **Lydia** | [@leeddyah](https://github.com/leeddyah)| Wrote the HTML for the hero section. |
-| **Tunde** | [@Tunde99](https://github.com/Tunde99) | Contributed ideas for dark mode and responsiveness. |
+| **Tunde Adetoro** | [@Tunde99](https://github.com/Tunde99) | Contributed ideas for dark mode and responsiveness.|
 
 
 ---
